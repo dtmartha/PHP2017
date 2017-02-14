@@ -16,15 +16,19 @@ $kappersagenda["10.15"] = "Karel de Meeuw";
 $kappersagenda["10.30"] = $legePlek;
 
 foreach ($kappersagenda as $tijden => $klanten) {
-    echo "Tijd: " . $tijden . "," . " Klant: " . $klanten . "<br>";
+
 
     for ($i = 0; $i < $tijden; $i++) {
 
 
     }
+
     if ($klanten == $legePlek) {
+        echo "Deze tijd is beschikbaar: ";
+
         print("<li>" . $tijden . "</li>");
     }
+
 
 
 
